@@ -15,7 +15,7 @@ void main() {
   if (nama == null || nama.isEmpty) {
     print("Nama harus diisi!");
   } else if (peran == null || peran.isEmpty) {
-    print("Halo $nama, Pilih peranmu untuk memulai game!");
+    print("Halo $nama, Pilih peranmu untuk memulai game! (penyihir, guard, werewolf)");
   } else {
     print("Selamat datang di Dunia Werewolf, $nama");
     if (peran.toLowerCase() == "penyihir") {
