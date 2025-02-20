@@ -16,7 +16,7 @@ void main() {
   // Contoh 3: Premis dengan perbandingan suatu nilai
   var mood = "happy";
   if (mood == "happy") {
-    print("hari ini aku tidak bahagia!");
+    print("hari ini aku bahagia!");
   }
 
   // Contoh 4: Branching sederhana
@@ -83,6 +83,4 @@ void main() {
         print('Tidak terjadi apa-apa');
       }
   }
-
-  
 }
