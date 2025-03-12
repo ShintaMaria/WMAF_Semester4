@@ -20,7 +20,7 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('Form Tambah Mood Kamu Hari ini')),
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
       drawer: const LeftDrawer(),
