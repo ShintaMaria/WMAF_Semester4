@@ -1,0 +1,22 @@
+buildscript {
+    ext.kotlin_version = "2.1.0"  // ✅ Tambahkan ini di bagian atas
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // ✅ Tambahkan ini di dependencies
+        classpath "com.android.tools.build:gradle:8.1.0" // Sesuaikan versi dengan Gradle kamu
+        classpath "com.google.gms:google-services:4.3.10"
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

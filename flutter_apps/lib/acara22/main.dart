@@ -20,12 +20,12 @@ class MyApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   final List<String> gambar = [
     "gambar1.gif",
-    "gambar2.gif",
+    
   ];
 
   static const Map<String, Color> colors = {
     'gambar1': Colors.blueAccent,
-    'gambar2': Colors.greenAccent,
+    
   };
 
   @override
